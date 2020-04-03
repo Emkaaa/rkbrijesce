@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1.5fr 1.2fr 15fr 1.3fr;
+    grid-gap: 8px;
+}
+
+.header{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.nav{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.main{
+    background-color: green;
+}
+.side{
+    background-color: yellow;
+}
+.footer{
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
