@@ -8,7 +8,7 @@ $secondaryColor : lightblue;
   
 body {
     display: grid;
-    grid-template-rows: 8rem 1fr 15fr 1fr;
+    grid-template-rows: 7rem 1fr auto auto;
     grid-gap: 0px;
     color: white;
     font-family: Helvetica;
@@ -39,11 +39,12 @@ body {
     .nav-bar {
 
         grid-column: 1/4;
-        margin: 10px;
+        margin: 5px;
         .nav-item{
             font-style: bold;
             text-align: center;
-            margin: 0 10px;
+            margin: 10px 20px;
+            font-size: 18px;
         }
 
         .nav-item:hover{
@@ -55,25 +56,54 @@ body {
         width: 100vw;
         grid-row: 3/4;
         display: grid;
-        grid-template-columns: 5% 65% 25% 5%;
+        grid-template-columns: 10% 60% 20% 10%;
 
         .main {
             margin: 10px;
-            background-color: $primaryColor;
             grid-column: 2/3;
-    
+            
+            .carousel-item{
+                width : 100%;
+                height: 56%;
+                font-size: 150%;
+                
+            }
+
         }
           
         .side {
-            margin: 5px;
-            background-color: $secondaryColor;
+            margin: 10px;
             grid-column: 3/4;
-        }
-              
+
+        }    
+        
+        @media only screen and (max-width: 1300px) {
+            .midpart{
+                grid-template-columns: 5% 65% 25% 5%;
+            }
+            .main{
+                grid-column: 2/4;
+            }
+            .side{
+                grid-column: 2/4;
+            }
+          }
+
+          @media only screen and (max-width: 800px) {
+            grid-template-columns: 2% 96% 2%;
+            .main{
+                grid-column: 2/3;
+            }
+            .side{
+                grid-column: 2/3;
+            }
+
+          }
     }
       
     .footer {
         background-color: $primaryColor;
+        grid-row: 5/6;
       }
 
 
