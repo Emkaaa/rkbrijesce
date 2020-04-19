@@ -8,7 +8,7 @@ $secondaryColor : lightblue;
   
 body {
     display: grid;
-    grid-template-rows: 2.5fr 1.5fr auto;
+    grid-template-rows: 8rem auto auto;
     grid-template-columns: 15% 70% 15%;
     grid-gap: 0px;
     
@@ -39,19 +39,23 @@ body {
 
       
     .nav-bar {
-        font-size: 15rem;
-        margin: 10px;
+
         grid-column: 1/4;
-       
+        margin: 10px;
         .nav-item{
-            margin: 30px;
             font-style: bold;
             text-align: center;
+            margin: 0 10px;
+        }
+
+        .nav-item:hover{
+            background-color: white;
         }
     }
 
     .mid-part{
         grid-column: 2/3;
+        margin-top: 10px;
         
         .card-img{
             object-fit: cover;

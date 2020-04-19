@@ -6,8 +6,8 @@
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2.5fr 1.5fr auto;
-      grid-template-rows: 2.5fr 1.5fr auto;
+  -ms-grid-rows: 8rem auto auto;
+      grid-template-rows: 8rem auto auto;
   -ms-grid-columns: 15% 70% 15%;
       grid-template-columns: 15% 70% 15%;
   grid-gap: 0px;
@@ -44,23 +44,27 @@ body .header .logo {
 }
 
 body .nav-bar {
-  font-size: 15rem;
-  margin: 10px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+  margin: 10px;
 }
 
 body .nav-bar .nav-item {
-  margin: 30px;
   font-style: bold;
   text-align: center;
+  margin: 0 10px;
+}
+
+body .nav-bar .nav-item:hover {
+  background-color: white;
 }
 
 body .mid-part {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  margin-top: 10px;
 }
 
 body .mid-part .card-img {
