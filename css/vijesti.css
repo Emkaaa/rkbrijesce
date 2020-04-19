@@ -6,8 +6,10 @@
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2.5fr 1fr auto;
-      grid-template-rows: 2.5fr 1fr auto;
+  -ms-grid-rows: 2.5fr 1.5fr auto;
+      grid-template-rows: 2.5fr 1.5fr auto;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
   grid-gap: 0px;
   font-family: Helvetica;
 }
@@ -19,6 +21,9 @@ body .header {
   text-justify: center;
   margin-bottom: 0;
   font-size: 30px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,5 +41,31 @@ body .header .logo {
   height: 50px;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+body .nav-bar {
+  font-size: 15rem;
+  margin: 10px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+body .nav-bar .nav-item {
+  margin: 30px;
+  font-style: bold;
+  text-align: center;
+}
+
+body .mid-part {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+body .mid-part .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20vh;
 }
 /*# sourceMappingURL=vijesti.css.map */
