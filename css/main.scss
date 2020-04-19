@@ -1,0 +1,99 @@
+$primaryColor : #333;
+$secondaryColor : lightblue;
+
+* {
+    padding: 0px;
+    margin: 0;
+  }
+  
+body {
+    display: grid;
+    grid-template-rows: 2.5fr 1fr 15fr 1fr;
+    grid-gap: 0px;
+    color: white;
+    font-family: Helvetica;
+  
+    .header {
+        background-color: $primaryColor;
+        grid-column: 1/3;
+        text-align: start;
+        text-justify: center;
+        margin-bottom: 0;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+
+        .club-name {
+            margin-left: 1rem;
+        }
+          
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+     
+      
+    .nav-bar {
+        grid-column: 1/3;
+        margin-top: 0;
+        grid-row: 2/3;
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: $secondaryColor;
+        }
+          
+        li {
+            float: left;
+        }
+          
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+          
+        li a:hover {
+            background-color: #111;
+        }
+    }
+      
+    .midpart {
+        width: 100vw;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 5% 65% 25% 5%;
+
+        .main {
+            margin: 10px;
+            background-color: $primaryColor;
+            grid-column: 2/3;
+    
+        }
+          
+        .side {
+            margin: 5px;
+            background-color: $secondaryColor;
+            grid-column: 3/4;
+        }
+              
+    }
+      
+    .footer {
+        background-color: $primaryColor;
+      }
+
+
+}
+  
+
+  /*# sourceMappingURL=main.css.map */

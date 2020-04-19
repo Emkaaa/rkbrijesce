@@ -1,0 +1,45 @@
+$primaryColor : #333;
+$secondaryColor : lightblue;
+
+* {
+    padding: 0px;
+    margin: 0;
+  }
+  
+body {
+    display: grid;
+    grid-template-rows: 2.5fr 1fr auto;
+    grid-gap: 0px;
+    
+    font-family: Helvetica;
+  
+    .header {
+        background-color: $primaryColor;
+        color: white;
+        text-align: start;
+        text-justify: center;
+        margin-bottom: 0;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+
+        .club-name {
+            margin-left: 1rem;
+        }
+          
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+     
+      
+    .nav-bar {
+        
+
+    }
+
+}
