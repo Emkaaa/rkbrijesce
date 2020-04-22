@@ -8,24 +8,27 @@ $secondaryColor : lightblue;
   
 body {
     display: grid;
-    grid-template-rows: 7rem 1fr auto auto;
     grid-gap: 0px;
     color: white;
     font-family: Helvetica;
   
     .header {
         background-color: $primaryColor;
+        height: min-content;
+        padding: 20px 10px;
         color: white;
-        text-align: start;
-        text-justify: center;
-        margin-bottom: 0;
-        font-size: 30px;
+        font-size: 25px;
         grid-column: 1/4;
         display: flex;
         align-items: center;
 
         .club-name {
             margin-left: 1rem;
+            color: white;
+        }
+        
+        #club-name {
+            text-decoration: none;
         }
           
         .logo {
@@ -39,11 +42,12 @@ body {
     .nav-bar {
 
         grid-column: 1/4;
-        margin: 5px;
+        
+
         .nav-item{
             font-style: bold;
             text-align: center;
-            margin: 10px 20px;
+            margin: 0 20px;
             font-size: 18px;
         }
 
@@ -64,7 +68,7 @@ body {
             
             .carousel-item{
                 width : 100%;
-                height: 56%;
+                height: 50%;
                 font-size: 150%;
                 
             }
@@ -97,7 +101,6 @@ body {
             .side{
                 grid-column: 2/3;
             }
-
           }
     }
       
