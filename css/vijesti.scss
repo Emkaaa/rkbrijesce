@@ -8,25 +8,34 @@ $secondaryColor : lightblue;
   
 body {
     display: grid;
-    grid-template-rows: 8rem auto auto;
     grid-template-columns: 15% 70% 15%;
     grid-gap: 0px;
-    
     font-family: Helvetica;
-  
+    
+    @media only screen and (max-width: 1300px) {
+        body{
+            width: 100%;
+
+        }
+    }
+
     .header {
         background-color: $primaryColor;
+        height: min-content;
+        padding: 20px 10px;
         color: white;
-        text-align: start;
-        text-justify: center;
-        margin-bottom: 0;
-        font-size: 30px;
+        font-size: 25px;
         grid-column: 1/4;
         display: flex;
         align-items: center;
 
         .club-name {
             margin-left: 1rem;
+            color: white;
+        }
+        
+        #club-name {
+            text-decoration: none;
         }
           
         .logo {
@@ -36,16 +45,15 @@ body {
             margin-left: 1rem;
         }
     }
-
       
     .nav-bar {
 
         grid-column: 1/4;
-        margin: 10px;
+
         .nav-item{
             font-style: bold;
             text-align: center;
-            margin: 0 10px;
+            margin: 10px 20px;
         }
 
         .nav-item:hover{
@@ -55,11 +63,13 @@ body {
 
     .mid-part{
         grid-column: 2/3;
-        margin-top: 10px;
+        margin-top: 20px;
         
         .card-img{
             object-fit: cover;
             height: 20vh;
         }
     }
+
+   
 }

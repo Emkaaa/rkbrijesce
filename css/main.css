@@ -6,8 +6,6 @@
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 7rem 1fr auto auto;
-      grid-template-rows: 7rem 1fr auto auto;
   grid-gap: 0px;
   color: white;
   font-family: Helvetica;
@@ -15,11 +13,12 @@ body {
 
 body .header {
   background-color: #333;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 20px 10px;
   color: white;
-  text-align: start;
-  text-justify: center;
-  margin-bottom: 0;
-  font-size: 30px;
+  font-size: 25px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -33,6 +32,11 @@ body .header {
 
 body .header .club-name {
   margin-left: 1rem;
+  color: white;
+}
+
+body .header #club-name {
+  text-decoration: none;
 }
 
 body .header .logo {
@@ -46,13 +50,12 @@ body .nav-bar {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  margin: 5px;
 }
 
 body .nav-bar .nav-item {
   font-style: bold;
   text-align: center;
-  margin: 10px 20px;
+  margin: 10 20px;
   font-size: 18px;
 }
 
@@ -80,7 +83,7 @@ body .midpart .main {
 
 body .midpart .main .carousel-item {
   width: 100%;
-  height: 56%;
+  height: 50%;
   font-size: 150%;
 }
 
